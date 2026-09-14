@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Kirthikha ❤️ — A Personal Digital Love Letter</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Password Lock Screen Overlay -->
+  <div class="lock-screen-overlay" id="lockScreen">
+    <div class="lock-card" id="lockCard">
+      <div class="lock-icon">🔐💖</div>
+      <h2 class="lock-title">A Secret Message for Kirthikha ❤️</h2>
+      <p class="lock-subtitle">Enter the secret password to unlock your surprise...</p>
+      
+      <div class="lock-input-group">
+        <input type="password" id="passwordInput" class="lock-input" placeholder="Enter password..." autocomplete="off" autofocus>
+        <button id="unlockBtn" class="btn-romantic" style="width: 100%; justify-content: center;">
+          <span>Unlock My Heart 🔑</span>
+        </button>
+      </div>
+
+      <div class="lock-error-msg" id="lockError"></div>
+    </div>
+  </div>
+
+  <!-- Floating Particles Canvas -->
+  <canvas id="particlesCanvas"></canvas>
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Desktop Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Music Player Pill -->
+  <div class="music-player-container">
+    <div class="music-player-pill" id="musicPill">
+      <button class="music-toggle-btn" id="musicToggleBtn" aria-label="Toggle Romantic Music">
+        <span class="icon" id="musicIcon">🔇</span>
+        <span>MUSIC</span>
+        <span id="musicStatus">OFF</span>
+      </button>
+      <div class="equalizer">
+        <div class="equalizer-bar"></div>
+        <div class="equalizer-bar"></div>
+        <div class="equalizer-bar"></div>
+      </div>
+      <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="0.5" title="Volume">
+      <audio id="bgAudio" src="music/Ed Sheeran - Photograph (Lyrics) (1).mp3" loop preload="auto"></audio>
+    </div>
+  </div>
+
+  <!-- MAIN NARRATIVE CONTAINER -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="section" id="hero">
+      <div class="container hero-content">
+        <span class="hero-tag">FOR THE MOST IMPORTANT PERSON IN MY WORLD ❤️</span>
+        <h1 class="hero-title">Kirthikha…</h1>
+        <p class="hero-subtitle">I owe you a VERY BIG sorry 🥺</p>
+        <p class="hero-subtitle">Ithu fullah parruuuuu da maa 🥺</p>
+        <div class="hero-heart-pulse">💖</div>
+        <p class="hero-desc">Your sleepy idiot accidentally passed out mid-texting you…</p>
+        <a href="#crime" class="btn-romantic" id="heroCtaBtn">
+          <span>Open my heart ❤️</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — THE CRIME 😭 -->
+    <section class="section" id="crime">
+      <div class="container">
+        <div class="glass-card crime-card reveal-on-scroll">
+          <h2 class="heading-md">Okay… I admit it.</h2>
+          <div class="crime-banner">
+            I FELL ASLEEP UNKNOWINGLY WHILE TEXTING YOU 😭📱
+          </div>
+          
+          <div class="statements-list">
+            <div class="statement-item">I was literally in the middle of typing a message to you.</div>
+            <div class="statement-item">My eyes just shut down without my permission.</div>
+            <div class="statement-item">I didn't choose sleep over you, my body just betrayed me.</div>
+          </div>
+
+          <p class="crime-punchline">I PASSED OUT MID-TEXT LIKE AN UNKNOWING SLEEPY IDIOT 😭</p>
+
+          <!-- Sleepy Phone CSS Animation -->
+          <div class="sleepy-phone-container">
+            <div class="phone-zzz">
+              <span>Z</span>
+              <span>z</span>
+              <span>z..</span>
+            </div>
+            <div class="phone-body">
+              <div class="phone-screen">
+                <div class="chat-bubble-mini">Typing to my love...</div>
+                <div class="chat-bubble-mini" style="background:#4a0e17; align-self:flex-end;">😴 💀 *dropped phone*</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — WHAT ACTUALLY HAPPENED (TIMELINE) -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <h2 class="heading-lg reveal-on-scroll">The tragic story of last night…</h2>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:31 PM</span>
+              <span class="timeline-text">Happily texting to my wifeeyyyy ❤️</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:33 PM</span>
+              <span class="timeline-text">Still actively chatting & typing replies… 📱</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:42 PM</span>
+              <span class="timeline-text">Getting slightly sleepy, but still holding phone… 🥱</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:43 PM</span>
+              <span class="timeline-text">Me: "Let me finish typing this message..." 💬</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:44 PM</span>
+              <span class="timeline-text">My brain: *Unknowingly shuts down mid-sentence* 😴💀</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <span class="timeline-time">11:49 AM</span>
+              <span class="timeline-text">Phone droped down. Completely disappeared from Earth. 🌌</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="timeline-microcopy reveal-on-scroll">
+          Meanwhile Kirthikha waiting for my reply: 👁️👄👁️
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — MY ACTUAL APOLOGY (LOVE LETTER) -->
+    <section class="section" id="apology">
+      <div class="container love-letter-wrapper">
+        <div class="love-letter-card">
+          <div class="wax-seal">❤️</div>
+          <h2 class="letter-heading">I'm really sorry, my love. 🥺❤️</h2>
+
+          <div class="letter-paragraph">
+            <span class="letter-highlight">Kirthikha</span>, I'm really really really sorryyyyyyyyy 😭❤️
+          </div>
+          <div class="letter-paragraph">
+            I know I suddenly disappeared mid-text while we were chatting without even saying goodnight.
+          </div>
+          <div class="letter-paragraph">
+            I was literally in the middle of texting you, and without me even realizing, my body just passed out unknowingly 😭
+          </div>
+          <div class="letter-paragraph">
+            And honestly… I know leaving you hanging like that must have felt bad.
+          </div>
+          <div class="letter-paragraph">
+            But please don't ever think that I stopped wanting to talk to you.
+          </div>
+          <div class="letter-paragraph">
+            You are literally one of the people I could text and talk to forever without getting tired.
+          </div>
+          <div class="letter-paragraph">
+            I didn't choose sleep over you. My stupid sleepy body just pulled the plug on me mid-texting 😭
+          </div>
+          <div class="letter-paragraph">
+            If I knew I was about to fall asleep, I would've stayed awake just to finish texting and tell you:
+          </div>
+          <div class="letter-paragraph" style="font-style: italic; color: var(--blush-pink);">
+            ‘Goodnight my chellam. Sleep well. I love youuu ❤️’
+          </div>
+          <div class="letter-paragraph">
+            I'm sorry for unknowingly disappearing on you while texting.
+          </div>
+          <div class="letter-paragraph">
+            I'm sorry for not saying goodnight.
+          </div>
+          <div class="letter-paragraph">
+            And I'm especially sorry if I made you feel like you weren't important to me.
+          </div>
+          <div class="letter-paragraph">
+            Because the truth is the complete opposite.
+          </div>
+          <div class="letter-paragraph">
+            You are my <span class="letter-highlight">favourite person</span>. You are my <span class="letter-highlight">comfort</span>. You are my <span class="letter-highlight">happiness</span>. You are <span class="letter-highlight">my world</span>.
+          </div>
+          <div class="letter-paragraph">
+            And even though I unknowingly fell asleep mid-text…
+          </div>
+          <div class="letter-paragraph" style="font-weight: 700; font-size: 1.3rem; color: #fff;">
+            I could never accidentally stop loving you.
+          </div>
+
+          <div class="handwriting-note">
+            I love you, Kirthikha. ❤️
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — FORGIVENESS (INTERACTIVE) -->
+    <section class="section" id="forgiveness">
+      <div class="container">
+        <div class="glass-card forgiveness-box reveal-on-scroll">
+
+          <div id="forgivenessQuestionBox">
+            <h2 class="heading-md">So… will you forgive your sleepy idiot? 🥺</h2>
+            <div class="forgiveness-buttons">
+              <button class="btn-romantic btn-yes" id="btnYes">YES ❤️</button>
+              <button class="btn-no" id="btnNo">NO 😤</button>
+            </div>
+          </div>
+
+          <div class="forgiveness-success" id="forgivenessSuccess">
+            <h2 class="forgiven-title">YAYYYYYYYYY 😭❤️</h2>
+            <p class="hug-text">Your sleepy idiot has officially been forgiven.</p>
+            <p class="subheading" style="margin-top: 10px;">Come here 🫂</p>
+            <div class="big-beating-heart">💖</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — GOOD MORNING (SUNRISE TRANSITION) -->
+    <section class="section" id="morning">
+      <div class="container morning-card">
+        <div class="sunrise-sun"></div>
+        <div class="morning-lines">
+          <div class="morning-line">Good morning, my world. 🌅❤️</div>
+          <div class="morning-line">I may have unknowingly passed out mid-text without saying goodnight…</div>
+          <div class="morning-line">But I woke up thinking about you.</div>
+          <div class="morning-line">Every morning, I still choose you.</div>
+          <div class="morning-line highlight" style="margin-top: 25px;">
+            Kirthikha ❤️<br>
+            My world.<br>
+            My favourite person.<br>
+            My forever goodnight and good morning.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — OUR MEMORIES GALLERY -->
+    <section class="section" id="memories">
+      <div class="container">
+        <h2 class="heading-lg reveal-on-scroll">Our Special Memories ✨</h2>
+        <p class="subheading reveal-on-scroll">A few of the countless moments I wish I could replay forever…</p>
+
+        <div class="memories-grid">
+
+          <!-- Polaroid 1 -->
+          <div class="polaroid-card" data-type="video" data-src="date-1/WhatsApp Video 2026-09-13 at 09.41.56.mp4" data-caption="One of the days I wish I could replay forever. ❤️">
+            <div class="polaroid-media-wrapper">
+              <video class="polaroid-video" muted preload="metadata" src="date-1/WhatsApp Video 2026-09-13 at 09.41.56.mp4#t=0.5"></video>
+              <div class="play-badge">▶</div>
+            </div>
+            <div class="polaroid-caption">Date 01 ❤️</div>
+            <div class="polaroid-tag">Our Special Date</div>
+          </div>
+
+          <!-- Polaroid 2 -->
+          <div class="polaroid-card" data-type="image" data-src="date-2/WhatsApp Image 2026-08-22 at 12.53.07.jpeg" data-caption="Look at that priceless smile! 💖">
+            <div class="polaroid-media-wrapper">
+              <img class="polaroid-img" src="date-2/WhatsApp Image 2026-08-22 at 12.53.07.jpeg" alt="Date 02 Memory">
+            </div>
+            <div class="polaroid-caption">Date 02 ❤️</div>
+            <div class="polaroid-tag">My Favourite Smile</div>
+          </div>
+
+          <!-- Polaroid 3 -->
+          <div class="polaroid-card" data-type="image" data-src="date-3/cover-1.jpeg" data-caption="Every moment with you feels magical. ✨">
+            <div class="polaroid-media-wrapper">
+              <img class="polaroid-img" src="date-3/cover-1.jpeg" alt="Date 03 Memory">
+            </div>
+            <div class="polaroid-caption">Date 03 ❤️</div>
+            <div class="polaroid-tag">Magical Moments</div>
+          </div>
+
+          <!-- Polaroid 4 -->
+          <div class="polaroid-card" data-type="image" data-src="date-4/WhatsApp Image 2026-09-13 at 09.42.02.jpeg" data-caption="Forever my favorite person to make memories with. 🫂">
+            <div class="polaroid-media-wrapper">
+              <img class="polaroid-img" src="date-4/WhatsApp Image 2026-09-13 at 09.42.02.jpeg" alt="Date 04 Memory">
+            </div>
+            <div class="polaroid-caption">Date 04 ❤️</div>
+            <div class="polaroid-tag">Always & Forever</div>
+          </div>
+
+          <!-- Polaroid 5 -->
+          <div class="polaroid-card" data-type="image" data-src="general/cover-1.jpeg" data-caption="My comfort, my happiness, my entire world. 🌹">
+            <div class="polaroid-media-wrapper">
+              <img class="polaroid-img" src="general/cover-1.jpeg" alt="General Memory">
+            </div>
+            <div class="polaroid-caption">Us Forever ❤️</div>
+            <div class="polaroid-tag">My Chellam</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — FINAL SCREEN (GRAND FINALE) -->
+    <section class="section" id="finale">
+      <div class="container finale-box">
+        <div class="glowing-single-heart">❤️</div>
+        
+        <div class="finale-sequence">
+          <div class="finale-line">I'm sorry, chellam.</div>
+          <div class="finale-line">I'm really sorry.</div>
+          <div class="finale-line">But never doubt this…</div>
+          <div class="finale-line finale-love-you">I LOVE YOU. ❤️</div>
+          <div class="finale-line">More than this tiny website could ever explain.</div>
+        </div>
+
+        <div class="finale-signature reveal-on-scroll">
+          — Your sleepy idiot 🥺❤️
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR POLAROIDS -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <div id="lightboxContainer"></div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- PLAYFUL FORGIVENESS MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <div class="modal-emoji">WAITTTTT 😭😭😭</div>
+      <h3 class="modal-title">Incorrect Answer!</h3>
+      <p class="modal-desc">That's not the answer I was hoping for…</p>
+      <button class="btn-romantic" id="modalTryAgainBtn">Try again 🥺</button>
+    </div>
+  </div>
+
+  <!-- Custom App Script -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
